@@ -11,10 +11,10 @@ def create(response):
     return redirect('/')
 
 def number(response, number):
-    return HttpResponse("placeholder to display blog number: {number}")
+    return HttpResponse(f"placeholder to display blog number: {number}")
 
 def edit(response, number):
-    return HttpResponse('placeholder to edit blog number: {number}')
+    return HttpResponse(f'placeholder to edit blog number: {number}')
 
 def delete(response, number):
     return redirect('/')
