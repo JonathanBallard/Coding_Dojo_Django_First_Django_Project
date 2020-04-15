@@ -16,10 +16,8 @@ Including another URLconf
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('apps.firstApp.urls')),
-    path('new/', include('apps.firstApp.urls')),
-    path('create/', include('apps.firstApp.urls')),
-    path('<int:number>/', include('apps.firstApp.urls')),
-    path('<int:number>/edit/', include('apps.firstApp.urls')),
-    path('<int:number>/delete/', include('apps.firstApp.urls')),
+    path('blogs/', include('apps.firstApp.urls')),
+    path('surveys/', include('apps.survey.urls')),
+    path('', include('apps.users.urls')),
+
 ]
